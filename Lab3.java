@@ -56,18 +56,24 @@ class Lab3{
 		}
 		if(num2%2 == 0){
 			countEven++;
+			sumEven = sumEven + num2
 		}else{
 			countOdd++;
+			sumOdd = sumOdd + num2
 		}
 		if(num3%2 == 0){
 			countEven++;
+			sumEven = sumEven + num3
 		}else{
 			countOdd++;
+			sumOdd = sumOdd + num3
 		}
 		if(num4%2 == 0){
 			countEven++;
+			sumEven = sumEven + num4
 		}else{
 			countOdd++;
+			sumOdd = sumOdd + num4
 		}
 
 		System.out.println("The number of even numbers are : " + countEven);
@@ -76,23 +82,31 @@ class Lab3{
 	//print how many are one digit vs two digit
 		if(num1 <= 9){
 			oneDigit++;
+			sumOneDigit = sumOneDigit + num1;
 		}else{
 			twoDigit++;
+			sumTwoDigit = sumTwoDigit + num1;
 		}
 		if(num2 <= 9){
 			oneDigit++;
+			sumOneDigit = sumOneDigit + num2;
 		}else{
 			twoDigit++;
+			sumTwoDigit = sumTwoDigit + num2;
 		}
 		if(num3 <= 9){
 			oneDigit++;
+			sumOneDigit = sumOneDigit + num3;
 		}else{
 			twoDigit++;
+			sumTwoDigit = sumTwoDigit + num3;
 		}
 		if(num1 <= 9){
 			oneDigit++;
+			sumOneDigit = sumOneDigit + num4;
 		}else{
 			twoDigit++;
+			sumTwoDigit = sumTwoDigit + num4;
 		}
 	//sum of all even numbers
 
