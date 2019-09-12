@@ -6,6 +6,12 @@ class Lab3{
 
 		int countEven = 0;
 		int countOdd = 0;
+		int oneDigit = 0;
+		int twoDigit = 0;
+		int sumEven = 0;
+		int sumOdd = 0;
+		int sumOneDigit = 0;
+		int sumTwoDigit = 0;
 	//get 4 positive integer inputs from the user.
 		Scanner scan = new Scanner(System.in);
 
@@ -43,8 +49,10 @@ class Lab3{
 	//print how many even vs odd numbers %
 		if(num1%2 == 0){
 			countEven++;
+			sumEven = sumEven + num1
 		}else{
 			countOdd++;
+			sumOdd = sumOdd + num1
 		}
 		if(num2%2 == 0){
 			countEven++;
@@ -64,8 +72,30 @@ class Lab3{
 
 		System.out.println("The number of even numbers are : " + countEven);
 		System.out.println("The number of odd numbers are : " + countOdd);
+
 	//print how many are one digit vs two digit
+		if(num1 <= 9){
+			oneDigit++;
+		}else{
+			twoDigit++;
+		}
+		if(num2 <= 9){
+			oneDigit++;
+		}else{
+			twoDigit++;
+		}
+		if(num3 <= 9){
+			oneDigit++;
+		}else{
+			twoDigit++;
+		}
+		if(num1 <= 9){
+			oneDigit++;
+		}else{
+			twoDigit++;
+		}
 	//sum of all even numbers
+
 	//sum of all odd numbers
 	//sum of all one digit numbers
 	//sum of all two digit numbers
