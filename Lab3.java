@@ -1,9 +1,10 @@
+//no arrays or loops allowed 
+
 import java.util.Scanner;
 
-class Lab3{
 
+public class Lab3 {
 	public static void main(String args[]){
-
 		int countEven = 0;
 		int countOdd = 0;
 		int oneDigit = 0;
@@ -14,18 +15,18 @@ class Lab3{
 		int sumTwoDigit = 0;
 	//get 4 positive integer inputs from the user.
 		Scanner scan = new Scanner(System.in);
-
-		System.out.print("Enter your first number");
+	
+		System.out.print("Enter your first number: ");
 		int num1 = scan.nextInt();
-		System.out.print("Enter your second number");
+		System.out.print("Enter your second number: ");
 		int num2 = scan.nextInt();
-		System.out.print("Enter your third number");
+		System.out.print("Enter your third number: ");
 		int num3 = scan.nextInt();
-		System.out.print("Enter your fourth number");
+		System.out.print("Enter your fourth number: ");
 		int num4 = scan.nextInt();
-
+	
 		scan.close();
-
+	
 	//print largest int 
 		if(num1 > num2 && num1 > num3 && num1 > num4){
 			System.out.println(num1 + " is the largest");
@@ -51,40 +52,40 @@ class Lab3{
 	//sum of all odd numbers
 		if(num1%2 == 0){
 			countEven++;
-			sumEven = sumEven + num1
+			sumEven = sumEven + num1;
 		}else{
 			countOdd++;
-			sumOdd = sumOdd + num1
+			sumOdd = sumOdd + num1;
 		}
 		if(num2%2 == 0){
 			countEven++;
-			sumEven = sumEven + num2
+			sumEven = sumEven + num2;
 		}else{
 			countOdd++;
-			sumOdd = sumOdd + num2
+			sumOdd = sumOdd + num2;
 		}
 		if(num3%2 == 0){
 			countEven++;
-			sumEven = sumEven + num3
+			sumEven = sumEven + num3;
 		}else{
 			countOdd++;
-			sumOdd = sumOdd + num3
+			sumOdd = sumOdd + num3;
 		}
 		if(num4%2 == 0){
 			countEven++;
-			sumEven = sumEven + num4
+			sumEven = sumEven + num4;
 		}else{
 			countOdd++;
-			sumOdd = sumOdd + num4
+			sumOdd = sumOdd + num4;
 		}
-
+	
 		System.out.println("The number of even numbers are : " + countEven);
 		System.out.println("The sum of all even numbers are: " + sumEven);
-
+	
 		System.out.println("The number of odd numbers are : " + countOdd);
 		System.out.println("The sum of all odd numbers are: " + sumOdd);
-
-
+	
+	
 	//print how many are one digit vs two digit
 	//sum of all one digit numbers
 	//sum of all two digit numbers
@@ -118,16 +119,14 @@ class Lab3{
 		}
 		System.out.println("The number of one digit numbers are : " + oneDigit);
 		System.out.println("The sum of all one digit numbers are: " + sumOneDigit);
-
+	
 		System.out.println("The number of two digit numbers are : " + twoDigit);
 		System.out.println("The sum of all two digit numbers are: " + sumTwoDigit);
-
-
-	//no arrays or loops allowed 
-
-
+	
+	
+	
+	
+	
 	}
-
-
 
 }
