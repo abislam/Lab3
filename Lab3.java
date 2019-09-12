@@ -47,6 +47,8 @@ class Lab3{
 			System.out.println(num4 + " is the smallest");
 		}
 	//print how many even vs odd numbers %
+	//sum of all even numbers
+	//sum of all odd numbers
 		if(num1%2 == 0){
 			countEven++;
 			sumEven = sumEven + num1
@@ -77,9 +79,15 @@ class Lab3{
 		}
 
 		System.out.println("The number of even numbers are : " + countEven);
+		System.out.println("The sum of all even numbers are: " + sumEven);
+
 		System.out.println("The number of odd numbers are : " + countOdd);
+		System.out.println("The sum of all odd numbers are: " + sumOdd);
+
 
 	//print how many are one digit vs two digit
+	//sum of all one digit numbers
+	//sum of all two digit numbers
 		if(num1 <= 9){
 			oneDigit++;
 			sumOneDigit = sumOneDigit + num1;
@@ -108,11 +116,13 @@ class Lab3{
 			twoDigit++;
 			sumTwoDigit = sumTwoDigit + num4;
 		}
-	//sum of all even numbers
+		System.out.println("The number of one digit numbers are : " + oneDigit);
+		System.out.println("The sum of all one digit numbers are: " + sumOneDigit);
 
-	//sum of all odd numbers
-	//sum of all one digit numbers
-	//sum of all two digit numbers
+		System.out.println("The number of two digit numbers are : " + twoDigit);
+		System.out.println("The sum of all two digit numbers are: " + sumTwoDigit);
+
+
 	//no arrays or loops allowed 
 
 
